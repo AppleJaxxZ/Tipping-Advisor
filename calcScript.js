@@ -7,7 +7,19 @@ const clear = document.getElementById('remove');
 calculate.addEventListener('click', function() {
     let paragraph = document.createElement('p');
     paragraph.classList.add('paragraph-styling');
+
+    if (document.getElementById("takeout").checked) {
+      paragraph.innerText = Math.round(inputField.value * .10) + '$';
+   } else if (document.getElementById("dineIn").checked) {
       paragraph.innerText = Math.round(inputField.value * .15) + '$';
+   
+   } else if (document.getElementById('superiorService').checked) {
+      paragraph.innerText = Math.round(inputField.value * .20) + '$';
+
+   } else {
+     parargraph.innerText = "please select a percentage before before calculating your tip";
+   } 
+   
       returnContainer.appendChild(paragraph);
       inputField.value ="";
       
@@ -23,12 +35,3 @@ clear.addEventListener('click', function() {
 });
 
 
-
-if (document.getElementById("takeout").checked) {
-  return paragraph.innerText = Math.round(inputField.value * .10) + '$';
-} else if (document.getElementById("dineIn").checked) {
-  return  paragraph.innerText = Math.round(inputField.value * .15) + '$';
-
-} else if (document.getElementById('superiorService').checked) {
-  return paragraph.innerText = Math.round(inputField.value * .20) + '$';
-}
