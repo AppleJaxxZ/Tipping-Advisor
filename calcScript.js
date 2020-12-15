@@ -42,4 +42,11 @@ clear.addEventListener('click', function() {
 
 });
 
+inputField.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById('calculate').click();
+    }
+})
+
 
