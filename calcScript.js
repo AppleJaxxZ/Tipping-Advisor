@@ -15,10 +15,18 @@ calculate.addEventListener('click', function() {
    
    } else if (document.getElementById('superiorService').checked) {
       paragraph.innerText = Math.round(inputField.value * .20) + '$';
-
-   } else {
-     parargraph.innerText = "please select a percentage before before calculating your tip";
    } 
+    
+ var checkRadio = document.querySelector( 
+    'input[name="percentage"]:checked'); 
+  
+if(checkRadio != null) { 
+   paragraph.innerText;
+} 
+else { 
+    paragraph.innerText
+        = "Please select a tip percentage."; 
+} 
    
       returnContainer.appendChild(paragraph);
       inputField.value ="";
