@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tip Calculator</title>
-    <link rel="stylesheet" href="calcstyle.css">
-    
-</head>
+    <link rel="stylesheet" href="calcstyle.css" />
+  </head>
 
-<body>
+  <body>
     <div class="boxContainer">
-    <h1>Tip Advisor Calculator</h1>
-    <hr><br><br>
-   
-    
-    <input class="zz" type="radio" id="takeout" name="percentage" value="takeout">
-    <label for="takeout">10% Take-Out</label>
-    
-    <input class="zz" type="radio" id="dineIn" name="percentage" value="dineIn">
-<label for="DineIn">15% Dine-In</label>
+      <h1>
+        Tip Advisor<br />
+        Calculator
+      </h1>
+      <br /><br /><br />
 
+      <input
+        class="zz"
+        type="radio"
+        id="takeout"
+        name="percentage"
+        value="takeout"
+      />
+      <label for="takeout">10% Take-Out</label>
 
-<input class="zz" type="radio" id="superiorService" name="percentage" value="superiorService">
-<label for="superiorService">20% Excellent Service</label>
+      <input
+        class="zz"
+        type="radio"
+        id="dineIn"
+        name="percentage"
+        value="dineIn"
+      />
+      <label for="DineIn">15% Dine-In</label>
 
-<input class="zz" id="inputField" type="number"><button id="calculate">Calculate</button>
-<button class="zz" id="remove">Clear</button>
-<div class="returns" id="returnContainer"></div>
-</div>
+      <input
+        class="zz"
+        type="radio"
+        id="superiorService"
+        name="percentage"
+        value="superiorService"
+      />
+      <label for="superiorService">20% Excellent Service</label>
 
-    
+      <input class="zz" id="inputField" type="number" /><button id="calculate">
+        Calculate
+      </button>
+      <button class="zz" id="remove">Clear</button>
+      <div class="returns" id="returnContainer"></div>
+    </div>
+
     <script src="./calcScript.js" async defer></script>
-</body>
+  </body>
 </html>
